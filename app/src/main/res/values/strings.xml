@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MySugr</string>
+    <string name="avarageText">Your average is %.2f  %s</string>
+    <string name="mg_dL">mg/dL</string>
+    <string name="mmol_L">mmol/L</string>
+    <string name="enter_your_word">Enter your BG value</string>
+    <string name="add_measurement">Add Measurement:</string>
+</resources>
