@@ -1,13 +1,9 @@
 package com.task.mysugr.data
 
-import javax.inject.Inject
-import javax.inject.Singleton
+import kotlinx.coroutines.flow.Flow
 
-@Singleton
-class BGRepository @Inject constructor(private val  bloodGlucoseDao: BloodGlucoseDao) {
+interface BGRepository {
 
-    fun getBgValues() = bloodGlucoseDao.getBGValues()
-
-    suspend fun saveBGValue(bloodGlucose: BloodGlucose) = bloodGlucoseDao.saveBGValue(bloodGlucose)
-
+    fun getBgValues(): Flow<List<BloodGlucose>>
+    suspend fun saveBGValue(bloodGlucose: BloodGlucose): Long
 }
